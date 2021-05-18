@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background: white;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  position: relative;
+  min-height: 100%;
+  background-color: #c3cfe2;
+  padding: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Grid */
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  border: 3px solid hsla(0, 0%, 100%, 0.69);
+  margin-right: 100px;
+  margin-left: 0px;
+  padding: 0px 0px 0px 0px;
+  grid-row-gap: 5px;
+}
+
+/* Hovergrid */
+
+.portfolio-items figure {
+  background: #1abc9c;
+}
+
+.portfolio-items figure img {
+  opacity: 1;
+  -webkit-transition: 0.9s ease-in-out;
+  transition: 0.9s ease-in-out;
+}
+
+.portfolio-items figure:hover img {
+  opacity: 0;
+}
+
+.item {
+  position: relative;
+}
+
+.item button {
+  position: absolute;
+  color: #1abc9c;
+  display: none;
+  padding: 0.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 85px;
+}
+.item:hover img {
+  opacity: 0.5;
+}
+.item:hover button {
+  display: block;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .portfolio-items {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 7px;
+    margin: 0 auto;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  .portfolio-items {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 7px;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0px 0px 0px 0px;
+  }
+}

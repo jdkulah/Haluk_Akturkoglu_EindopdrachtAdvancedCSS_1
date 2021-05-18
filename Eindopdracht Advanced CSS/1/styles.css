@@ -1,0 +1,64 @@
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: grey;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  font-stretch: ultra-condensed;
+  letter-spacing: 3px;
+}
+
+Body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #c3cfe2;
+}
+
+.testimonial {
+  border-radius: 10px 10px 0px 0px;
+  height: 200px;
+  width: 350px;
+  margin: 100px 0px 0px 0px;
+  padding: 10px 30px 90px 30px;
+  -webkit-box-shadow: 1px 1px 2px #a7a7a7;
+  box-shadow: 1px 1px 2px #a7a7a7;
+  background: white;
+}
+
+/* footer Section */
+.footer {
+  border-radius: 0px 0px 10px 10px;
+  height: 200px;
+  width: 350px;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 30px 10px 30px;
+  -webkit-box-shadow: 1px 1px 2px #a7a7a7;
+  box-shadow: 1px 1px 2px #a7a7a7;
+  background: #686de0;
+}
+
+.card {
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: -70px;
+  margin-left: 120px;
+  padding: 0px;
+  height: 120px;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.411);
+  text-align: center;
+  margin-top: -15px;
+}
+/*# sourceMappingURL=styles.css.map */

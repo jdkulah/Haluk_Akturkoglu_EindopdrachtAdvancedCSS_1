@@ -1,0 +1,20 @@
+@mixin Flexcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.Body {
+  @include Flexcenter();
+
+  background-color: $bodyColor;
+}
+
+.testimonial {
+  border-radius: 10px 10px 0px 0px;
+  height: 200px;
+  width: 350px;
+  margin: 100px 0px 0px 0px;
+  padding: 10px 30px 90px 30px;
+  box-shadow: 1px 1px 2px rgb(167, 167, 167);
+  background: $titleColor;
+}
